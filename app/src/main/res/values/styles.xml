@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- android_large___2 styles -->
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/let_s_get_started_color</item>
+		<item name="android:statusBarColor">@color/let_s_get_started_color</item>
+
+	</style>
+	<style name="mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorAccent">@color/white</item>
+		<item name="android:statusBarColor">@color/let_s_get_started_color</item>
+	</style>
+	<style
+		name="AppTheme.addbudget">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:backgroundDimAmount">0.5</item>
+	</style>
+
+</resources>

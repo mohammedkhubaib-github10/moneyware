@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "377190472053",
+    "project_id": "moneyware-v1",
+    "storage_bucket": "moneyware-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377190472053:android:7f16f367a864cd85c09b3c",
+        "android_client_info": {
+          "package_name": "com.example.moneyware"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377190472053-n9arvnnejt17tft5rldq2adeg1icutn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moneyware",
+            "certificate_hash": "16868e40f819a0c2ebd153a4941e1f7e1963027e"
+          }
+        },
+        {
+          "client_id": "377190472053-k4m9bkcmrnle4vlmle2ab5s6kpqeoauj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB2b2nzzolRsRze018AKL6wu8PMGsfM2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377190472053-k4m9bkcmrnle4vlmle2ab5s6kpqeoauj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

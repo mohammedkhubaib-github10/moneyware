@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sap"
+            android:title="Save as PDF"
+            android:icon="@drawable/pdficon"/>
+        <item
+            android:id="@+id/sae"
+            android:title="Save as Excel"
+            android:icon="@drawable/excelicon"/>
+        <item
+            android:id="@+id/settings"
+            android:title="Settings"
+            android:icon="@drawable/settings_svgrepo_com"/>
+    <item
+        android:id="@+id/lout"
+        android:title="Sign Out"
+        android:icon="@drawable/logouticon" />
+    </group>
+
+
+
+</menu>

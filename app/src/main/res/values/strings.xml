@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- android_large___2 strings -->
+
+    <string name="app_name">moneyware</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="already_have_account__log_in_string">Existing User? Sign In</string>
+    <string name="sign_up_with_google_string">Sign up with Google</string>
+    <string name="sign_in_with_google_string">Sign in with Google</string>
+    <string name="let_s_get_started_string">Lets Get Started</string>
+    <string name="moneybuddy_string">moneyware</string>
+    <string name="powered_by_dev_mk_string">Powered by DEV-MK</string>
+    <string name="moneybuddy_ek4_string">moneyware</string>
+    <string name="october_2023_string">October-2023</string>
+    <string name="november_2023_string">November-2023</string>
+    <string name="___4500_00_string">$ 4500.00 </string>
+    <string name="total_expenses_string">Total Expenses</string>
+    <string name="november_2023_ek1_string">Custom</string>
+    <string name="___4500_00_ek1_string">$ 4500.00 </string>
+    <string name="total_expenses_ek1_string">Total Expenses</string>
+    <string name="client_id">377190472053-k4m9bkcmrnle4vlmle2ab5s6kpqeoauj.apps.googleusercontent.com</string>
+</resources>
