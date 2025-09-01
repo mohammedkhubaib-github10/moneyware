@@ -1,11 +1,12 @@
-package com.example.moneyware;
+package com.example.moneyware.core.utils.internet;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.widget.Toast;
+
+import com.example.moneyware.presentation.ui.auth.LoginActivity;
 
 public class SpecialReceiver extends BroadcastReceiver {
     Context fcontext;

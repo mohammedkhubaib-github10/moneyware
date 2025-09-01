@@ -1,4 +1,4 @@
-package com.example.moneyware;
+package com.example.moneyware.data.models;
 
 public class Budgets {
     private String budgetname;

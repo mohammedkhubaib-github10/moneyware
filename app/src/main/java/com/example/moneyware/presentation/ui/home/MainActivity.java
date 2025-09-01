@@ -1,9 +1,8 @@
-package com.example.moneyware;
+package com.example.moneyware.presentation.ui.home;
 
 import static android.app.PendingIntent.getActivity;
-import static android.content.ContentValues.TAG;
 
-import static androidx.core.content.SharedPreferencesKt.edit;
+import static androidx.core.content.ContextCompat.startActivity;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
@@ -12,46 +11,37 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.Manifest;
-import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.telephony.RadioAccessSpecifier;
-import android.util.Log;
-import android.view.InflateException;
-import android.view.LayoutInflater;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.PopupMenu;
-import android.widget.PopupWindow;
 import android.widget.ProgressBar;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.window.OnBackInvokedDispatcher;
 
 import com.bumptech.glide.Glide;
+import com.example.moneyware.core.utils.internet.InternetReciever;
+import com.example.moneyware.presentation.ui.notifications.NotificationActivity;
+import com.example.moneyware.R;
+import com.example.moneyware.presentation.ui.auth.LoginActivity;
+import com.example.moneyware.data.models.Budgets;
+import com.example.moneyware.presentation.ui.budget.addbudget;
+import com.example.moneyware.presentation.ui.common.adapters.CustomListAdapter;
+import com.example.moneyware.presentation.ui.expenses.ExpenseActivity;
+import com.example.moneyware.presentation.ui.settings.settingsActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -66,7 +56,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity implements CustomListAdapter.onItemClickListener {
     //Variable Initialization
@@ -125,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements CustomListAdapter
         notifcation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,NotificationActivity.class);
+                Intent intent=new Intent(MainActivity.this, NotificationActivity.class);
                 startActivity(intent);
             }
         });
@@ -159,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements CustomListAdapter
                 if (option_id == R.id.sae)
                     Toast.makeText(MainActivity.this, "Downloading as excel", Toast.LENGTH_SHORT).show();
                 if(option_id==R.id.settings){
-                    Intent intent=new Intent(MainActivity.this,settingsActivity.class);
+                    Intent intent=new Intent(MainActivity.this, settingsActivity.class);
                     startActivity(intent);
                 }
                 if (option_id == R.id.lout) {
@@ -300,6 +289,7 @@ public class MainActivity extends AppCompatActivity implements CustomListAdapter
     //Exit Dialog
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View v = getLayoutInflater().inflate(R.layout.deletedialog, null);
         builder.setView(v);

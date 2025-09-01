@@ -1,6 +1,4 @@
-package com.example.moneyware;
-
-import static android.content.ContentValues.TAG;
+package com.example.moneyware.presentation.ui.expenses;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,19 +11,18 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.moneyware.data.models.Expenses;
+import com.example.moneyware.core.utils.internet.InternetReciever;
+import com.example.moneyware.R;
+import com.example.moneyware.presentation.ui.common.adapters.CustomExpenseListAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -38,9 +35,7 @@ import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class ExpenseActivity extends AppCompatActivity implements CustomExpenseListAdapter.MenuListener {
     //Variable Initialization

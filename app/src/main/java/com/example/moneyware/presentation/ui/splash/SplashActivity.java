@@ -1,22 +1,20 @@
-package com.example.moneyware;
+package com.example.moneyware.presentation.ui.splash;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
-import android.provider.Telephony;
-import android.telephony.SmsManager;
 import android.widget.Toast;
 
+import com.example.moneyware.presentation.ui.home.MainActivity;
+import com.example.moneyware.R;
+import com.example.moneyware.presentation.ui.auth.LoginActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import android.Manifest;

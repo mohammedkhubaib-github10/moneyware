@@ -1,8 +1,7 @@
-package com.example.moneyware;
+package com.example.moneyware.presentation.ui.common.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +10,8 @@ import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.moneyware.data.models.Expenses;
+import com.example.moneyware.R;
 
 import java.util.ArrayList;
 

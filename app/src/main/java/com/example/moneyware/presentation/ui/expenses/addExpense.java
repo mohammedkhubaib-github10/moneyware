@@ -1,6 +1,4 @@
-package com.example.moneyware;
-
-import static android.content.ContentValues.TAG;
+package com.example.moneyware.presentation.ui.expenses;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +8,6 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -20,6 +17,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.moneyware.R;
+import com.example.moneyware.core.utils.internet.SpecialReceiver;
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

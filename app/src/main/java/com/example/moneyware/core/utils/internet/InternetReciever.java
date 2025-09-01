@@ -1,22 +1,17 @@
-package com.example.moneyware;
-
-import static android.content.ContentValues.TAG;
+package com.example.moneyware.core.utils.internet;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.moneyware.R;
+import com.example.moneyware.presentation.ui.auth.LoginActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class InternetReciever extends BroadcastReceiver {

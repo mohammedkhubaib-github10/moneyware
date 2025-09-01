@@ -1,4 +1,4 @@
-package com.example.moneyware;
+package com.example.moneyware.presentation.ui.notifications;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.moneyware.R;
+import com.example.moneyware.presentation.ui.home.MainActivity;
 
 public class NotificationActivity extends AppCompatActivity {
     ImageButton notificationback;
@@ -17,7 +20,7 @@ public class NotificationActivity extends AppCompatActivity {
         notificationback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(NotificationActivity.this,MainActivity.class);
+                Intent intent=new Intent(NotificationActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }

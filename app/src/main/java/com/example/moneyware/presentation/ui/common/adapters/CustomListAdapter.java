@@ -1,10 +1,8 @@
-package com.example.moneyware;
+package com.example.moneyware.presentation.ui.common.adapters;
 
 import android.content.Context;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,12 +11,12 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.Toolbar;
+
+import com.example.moneyware.data.models.Budgets;
+import com.example.moneyware.R;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CustomListAdapter extends BaseAdapter {
     Context context;

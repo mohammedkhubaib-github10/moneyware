@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/constraintlayout"
     android:layout_height="match_parent"
-    tools:context=".addExpense">
+    tools:context=".presentation.ui.expenses.addExpense">
     <View
         android:id="@+id/view3"
         android:layout_width="match_parent"

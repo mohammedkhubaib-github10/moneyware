@@ -5,7 +5,7 @@
     android:id="@+id/conslayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExpenseActivity">
+    tools:context=".presentation.ui.expenses.ExpenseActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/view"
